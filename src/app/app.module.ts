@@ -8,6 +8,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { PersonasComponent } from './components/personas/personas.component';
 import { CochesComponent } from './components/coches/coches.component';
 import { EmpleadosalarioComponent } from './components/empleadosalario/empleadosalario.component';
+import { EmpleadosoficioComponent } from './components/empleadosoficio/empleadosoficio.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { EmpleadosalarioComponent } from './components/empleadosalario/empleados
     PersonajesComponent,
     PersonasComponent,
     CochesComponent,
-    EmpleadosalarioComponent
+    EmpleadosalarioComponent,
+    EmpleadosoficioComponent
   ],
   imports: [
     BrowserModule,

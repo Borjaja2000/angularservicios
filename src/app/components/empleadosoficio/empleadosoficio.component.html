@@ -1,0 +1,32 @@
+
+<form #oficiosForm="ngForm">
+    <label>Seleccione oficio: </label>
+    <select #selectoficio name="selectoficio">
+        </select>
+        <button class="btn-success" (click)="buscarOficio()">Buscar Oficio</button>
+</form>
+<hr/>
+<div *ngIf="empleados.length > 0">
+    <table class="table table-info">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>APELLIDO</th>
+                <th>OFICIO</th>
+                <th>SALARIO</th>
+                <th>DEPARTAMENTO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let emp of empleados">
+                <td>{{emp.idEmpleado}}</td>
+                <td>{{emp.apellido}}€</td>
+                <td>{{emp.oficio}}€</td>
+                <td>{{emp.salario}}€</td>
+                <td>{{emp.departamento}}€</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+</div>
