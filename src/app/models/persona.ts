@@ -1,8 +1,8 @@
 export class Persona {
     constructor(
-        public idpersona:number,
-        public nombre:string,
-        public email:string,
-        public edad:number
+        public IdPersona:number,
+        public Nombre:string,
+        public Email:string,
+        public Edad:number
     ){}
 }
